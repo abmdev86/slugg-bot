@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A discord bot for Sluggaville discord server.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
   "devDependencies": {
     "eslint": "^7.27.0"
   },
