@@ -29,10 +29,11 @@ client.once('ready', () => {
 client.on('message', (message) => {
 
 	if (!message.content.startsWith('$') || message.author.bot) return;
+	// Remove below after host migration
 	if (message.content === '$Hello') {
 		message.reply(`Hello ${message.author}`);
 	}
-
+	// remove above after host migration
 	const args = message.content.slice('$'.length).trim().split(/ +/);
 	const commandName = args.shift().toLocaleLowerCase();
 
