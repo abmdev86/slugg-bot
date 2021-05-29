@@ -29,6 +29,9 @@ client.once('ready', () => {
 client.on('message', (message) => {
 
 	if (!message.content.startsWith('$') || message.author.bot) return;
+	if (message.content === '$Hello') {
+		message.reply(`Hello ${message.author}`);
+	}
 
 	const args = message.content.slice('$'.length).trim().split(/ +/);
 	const commandName = args.shift().toLocaleLowerCase();
