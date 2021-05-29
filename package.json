@@ -1,0 +1,29 @@
+{
+  "name": "slugg-bot",
+  "version": "1.0.0",
+  "description": "A discord bot for Sluggaville discord server.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.27.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amwebdev86/slugg-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "javascript",
+    "node"
+  ],
+  "author": "Auroiah Morgan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amwebdev86/slugg-bot/issues"
+  },
+  "homepage": "https://github.com/amwebdev86/slugg-bot#readme"
+}
