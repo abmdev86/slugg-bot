@@ -4,13 +4,15 @@
   "description": "A discord bot for Sluggaville discord server.",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "eslint": "^7.27.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
