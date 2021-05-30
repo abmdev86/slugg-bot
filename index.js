@@ -5,8 +5,8 @@ client.commands = new Discord.Collection();
 const prefix = '$';
 
 const commands = [{
-	name: 'hello', description: ' Say Hello to the bot', execute(msg) {
-		msg.reply(`Hello ${msg.author}`);
+	name: 'hello', description: ' Say Hello to the bot', execute(message) {
+		message.reply(`Hello ${message.author}`);
 	},
 },
 { name: 'server-info', description: 'Get information about the server' },
