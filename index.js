@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const prefix = '$';
 
-const commands = [{
+const commandFiles = [{
 	name: 'hello', description: ' Say Hello to the bot', execute(message) {
 		message.reply(`Hello ${message.author}`);
 	},
@@ -12,13 +12,14 @@ const commands = [{
 { name: 'server-info', description: 'Get information about the server' },
 ];
 
-for (const cmd of commands) {
-	client.commands.set(cmd.name, commands);
+for (const cmd of commandFiles) {
+	const command = cmd;
+	client.commands.set(command.name, command);
 }
 
-client.once('ready', () => {
-	console.log('Slugg-Bot Logged on server');
-});
+client.once('ready', () => console.log('Slugg-Bot Logged on server'));
+
+client.on('shardError', error => console.error(error));
 
 client.on('message', (message) => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
