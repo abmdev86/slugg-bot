@@ -1,7 +1,7 @@
 {
   "name": "slugg-bot",
   "version": "1.0.0",
-  "description": "A discord bot for Sluggaville discord server.",
+  "description": "A discord bot for logging and other simple events for the Sluggaville discord server.",
   "main": "index.js",
   "dependencies": {
     "discord.js": "^12.5.3",
